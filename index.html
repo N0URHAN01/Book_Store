@@ -1,0 +1,871 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> BOOK-STORE </title>
+  <style>
+    section {
+      width: 100%;
+      height: 120vh;
+      background-image: url('image/BG.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+
+
+  <!-- Load Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  
+  <section>
+    <!--nav bar-->
+    <nav>
+      <button id="toggle-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="logo">
+        <img src="image/logo1.jpg" width="375" height="100">
+
+
+
+      </div>
+
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#features">our Features</a></li>
+        <li><a href="#deal"> offers </a></li>
+        <li><a href="#Arrivals">Arrivals</a></li>
+        <li><a href="#blogs">blogs</a></li>
+        <li><a href="#revw">Reviews</a></li>
+        <li><a href="reqbok.html">Request a book</a></li>
+      </ul>
+      
+      
+
+
+      <div class="icons">
+        <div class="fa-solid fa-cart-shopping " id="cart-icon"></div>
+        <i class="fa-brands fa-searchengin"></i>
+        <i class="fa-solid fa-heart"></i>
+
+        <div id="login-btn" class="fas fa-user"></div>
+
+        <!--- Cart----->
+        <div class="cart">
+          <h2 class="cart-title"> Your Cart</h2>
+          <!----content--->
+          <div class="cart-content">
+          </div>
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price"> $0</div>
+          </div>
+          <!------ buy buttom--->
+          <button type="button" class="btn-buy">Buy Now </button>
+          <i class="fas fa-times" id="close-cart"></i>
+        </div>
+
+
+      </div>
+
+
+    </nav>
+
+
+
+    <!--Home-->
+    <div class="fristsec" id="Home">
+
+      <div class="fristsec_tag">
+        <h1>WELCOME TO<br><span>The Story Shop</span></h1>
+
+        <p style="font-weight: bold;">
+          "Welcome to our online bookstore, where you'll find a vast selection of books
+          a variety of genres. Whether you're looking for the latest bestsellers,classic
+          literature,or niche titles,we've got you covered.
+          Our user-friendly website makes it easy to search for and purchase
+          books,
+          and we offer fast shipping to ensure your order arrives quickly. Plus, we're committed
+          to providing excellent customer service and are always happy to help you find the perfect book for your needs.
+          Thank you for choosing our bookstore, and happy reading!"
+        </p>
+        <a href="#" class="fristsec_btn">Learn More</a>
+
+      </div>
+
+      <div class="fristsec_img">
+        <img src="image/frist.jpeg">
+        <img src="image/second.jpeg">
+        <img src="image/thrd.jpeg">
+        <img src="image/four.jpeg">
+        <img src="image/five.jpeg">
+        <img src="image/six.jpeg">
+        <img src="image/seven.jpeg">
+
+      </div>
+
+
+
+
+    </div>
+
+  </section>
+  <!--/section-->
+
+  <!--login form -->
+  <section class="container-forms">
+    <div class="login_form">
+      <div id="close-login-btn" class="fas fa-times"></div>
+      <form action="">
+        <h3>Sign in</h3>
+        <span class="head">Email </span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+
+        <div class="field">
+          <span class="head">Password </span>
+          <input type="password" name="" class="box" placeholder="enter your password" id="">
+        </div>
+        <a href="#" class="forget-password">Forget Password</a>
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me">
+          <label for="remember-me"> Remember me</label>
+        </div>
+        <div class="btn-homee">
+          <input type="submit" value="sign in" class="btn">
+           <a  href="#"></a>
+        </div>
+        <p>Forget password ? <a href="#">click here </a></p>
+        <div class="from-link">
+          <span>Don't have an account ? <a href="#" id="signup-link" class="signup-link">SignUp</a>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    <!--sign-up form-->
+    <div class="signup_form">
+      <div id="close-signup-btn" class="fas fa-times"></div>
+      <form action="">
+        <div class="container-form">
+        <h3>SignUp</h3>
+        <span class="head">First Name </span>
+        <input type="text" class="box" placeholder="Enter Your First Name" id="">
+        <span class="head">Last Name </span>
+        <input type="text" class="box" placeholder="Enter Your Last Name" id="">
+        <div class="email">
+          <span class="head">Email </span>
+          <input type="email" name="" class="box" placeholder="Enter Your Email" id="">
+          <span class="head">Confirm Email </span>
+        </div>
+        <input type="email" name="" class="box" placeholder="Confirm your Email" id="">
+        <div class="password">
+          <span class="head">Password </span>
+          <input type="password" name="" class="box" placeholder="Enter Your Password" id="">
+          <span class="head">Confirm Password </span>
+          <input type="password" name="" class="box" placeholder="Confirm Your Password" id="">
+        </div>
+        <span class="head">Date Of Birth</span>
+        <input type="date" class="box" placeholder="Add Your Date Of Birth">
+          <div class="btn-home">
+         <input type="submit" value="SignUp"class="btn" ><a href="#">
+          <a  href="#"></a>
+         </div>
+        <div class="form-link">
+          <span>Already have an account? <a href="#" class="login">Login</a></span>
+        </div>
+      </div>
+      </form>
+    </div>
+  </section>
+
+  <!--Service section -->
+
+  <div class="services">
+
+    <div class="services_box">
+
+      <div class="services_card">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>Free Delivery</h3>
+        <p> order over $100. </p>
+      </div>
+
+      <div class="services_card">
+        <i class="fa-solid fa-headset"></i>
+        <h3>24 x 7 Services</h3>
+        <p> call us anytime </p>
+      </div>
+
+      <div class="services_card">
+        <i class="fa-solid fa-arrow-rotate-left"></i>
+
+        <h3>easy returns</h3>
+        <p> 10 days returns</p>
+      </div>
+
+      <div class="services_card">
+        <i class="fa-solid fa-lock"></i>
+        <h3>Secure Payment</h3>
+        <p> 100 secure payment </p>
+      </div>
+    </div>
+
+  
+  </div>
+
+
+
+  <!---feature section--------------->
+  <div class="features" id="features">
+    <h1 class="heading">our <span>Features </span> </h1>
+    <div class="box_container">
+      <div class="box">
+        <img src="image/books/book3.jpg" class="product-img">
+        <h3 class="product-title">Klara and the Sun </h3>
+        <p>Klara is a robot who is devoted to her kid Josie, observing the life around her and worshipping the Sun in
+          the manner that stops being cute and becomes a bit ...</p>
+        <a class="btn  add-cart"> add to cart</a>
+        <div class="price">$15.99 <span>$20.99</span></div>
+
+      </div>
+      <div class="box">
+        <img src="image/books/book1.jpg" class="product-img">
+        <h3 class="product-title">CODE BREAKER </h3>
+        <p>This book tells the story of that revolution and the players in it, especially Jennifer Doudna and her
+          co-workers who discovered the breakthrough that allows ...</p>
+        <a class="btn  add-cart"> add to cart</a>
+        <div class="price">$15.99 <span>$20.99</span></div>
+
+      </div>
+      <div class="box">
+        <img src="image/books/book2.jpg" class="product-img">
+        <h3 class="product-title">A Thousand Brains </h3>
+        <p>This discovery allows Hawkins to answer important questions about how we perceive the world, why we have a
+          sense of self, and the origin of high-level thought....</p>
+        <a class="btn  add-cart"> add to cart</a>
+        <div class="price">$15.99 <span>$20.99</span></div>
+
+      </div>
+      <div class="box">
+        <img src="image/books/book6.jpg" class="product-img">
+        <h3 class="product-title">Hamnet </h3>
+        <p>The boy, Hamnet, dies in 1596, aged eleven. Four years or so later, the husband writes a play called Hamlet.
+          Award-winning author Maggie O' .....</p>
+        <a class="btn  add-cart"> add to cart</a>
+        <div class="price">$15.99 <span>$20.99</span></div>
+
+      </div>
+      <div class="box">
+        <img src="image/books/book7.jpg" class="product-img">
+        <h3 class="product-title">Artemis </h3>
+        <p>It's just a very messy book overall, with a narrator that tries to be Mark Watney and fails, and a plot that
+          tries to be compelling but isn't. Where the science ...</p>
+        <a class="btn  add-cart"> add to cart</a>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div class="box">
+
+        <img src="image/books/book8.jpg" class="product-img">
+        <h3 class="product-title">I Am, I Am, I Am </h3>
+        <p>We are never closer to life than when we brush up against the possibility of death. I Am, I Am, I Am is
+          Maggie O'Farrell's astonishing memoir of the ...</p>
+        <a class="btn  add-cart"> add to cart</a>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div class="box">
+
+        <img src="image/books/book9.jpg" class="product-img">
+        <h3 class="product-title">Project Hail Mary </h3>
+        <p>The book alternates between the past in the run up to the mission as we discover the huge problem humanity
+          faces, and the present in which Ryland Grace attempts ...</p>
+        <a class="btn  add-cart"> add to cart</a>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div class="box">
+
+        <img src="image/books/book10.jpg" class="product-img">
+        <h3 class="product-title">The Martian</h3>
+        <p>In this book, Mark Watney becomes one of the first people to walk on Mars but after an accident causes him to
+          be believed dead and abandoned by his crew, it ...</p>
+        <a class="btn  add-cart"> add to cart</a>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+  <!--deal section-->
+
+  <section class="deal">
+
+    <div class="content" id="deal">
+      <h3> deal of the weekend </h3>
+      <h1> UP TO 40% OFF </h1>
+
+      <p> Don't miss out on our incredible book deals! For a limited time,
+        <br> we're offering discounts of up to 40% off on select titles throughout the store.
+      </p>
+      <a href="#" class="btn-d"> Shop Now</a>
+    </div>
+    <div class="img-deal">
+
+      <img src="image/books/deal1.jpeg" height="433px">
+      <!--img src="image/books/deal4.jpeg" width="-2000px" height="433px"-->
+      <script>
+        $(document).ready(function() {
+          $('.btn-d').click(function(e) {
+            e.preventDefault(); // Prevent the default anchor link behavior
+            $('html, body').animate({
+              scrollTop: $('#features').offset().top
+            }, 800);
+          });
+        });
+      </script>
+    </div>
+
+    
+  </section>
+
+
+
+  <!--new arrivals-->
+
+  <section class="arr">
+    <div class="arrivals_books" id="Arrivals">
+      <h1 class="heading">New <span>Arrivals</span> </h1>
+
+      <div class="arrivals_book_box">
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok1.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer">John willam</p>
+            <div class="categories"> Thriller </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok2.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> Methyss </p>
+            <div class="categories"> Fantasy </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok3.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> S.M GAITHER </p>
+            <div class="categories"> Drama </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok4.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> MACCIE </p>
+            <div class="categories"> Fantasy </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok5.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> WENN.A.F</p>
+            <div class="categories"> Fantasy </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok6.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> TODAY.B.A </p>
+            <div class="categories"> Thriller </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok7.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> SAMUEl.F </p>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok8.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> LUCY STEELE </p>
+            <div class="categories"> Romance </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok10.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> KRISTEN MARTIN </p>
+            <div class="categories"> Horror </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok11.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> COCO </p>
+            <div class="categories"> Fantasy </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok12.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> CRAIG.S </p>
+            <div class="categories"> Horror </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok13.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> willam </p>
+            <div class="categories"> Horror </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok14.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> Shwan </p>
+            <div class="categories"> Horror </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok15.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> AASTIIA.V </p>
+            <div class="categories"> Horror </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="arrivals_book_card">
+
+          <div class="arrivals_book_img">
+            <img src="image/bok16.jpeg">
+          </div>
+
+          <div class="arrivals_book_tag">
+            <h2>arrivals Books</h2>
+            <p class="writer"> charlize </p>
+            <div class="categories"> Romance </div>
+            <a href="#" class="f_btn">Learn More</a>
+          </div>
+        </div>
+
+        <style>
+          /* CSS styles for the hover effect */
+          .arrivals_book_card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+          }
+          .arrivals_book_card.hovered {
+      background-color: lightblue;
+    }
+      
+          .arrivals_book_img:hover {
+            opacity: 0.8;
+            transition: opacity 0.3s ease-in-out;
+          }
+        </style>
+
+<script>
+  $(document).ready(function() {
+    // Add hover effect to book cards
+    $('.arrivals_book_card').hover(
+      function() {
+        $(this).addClass('hovered');
+      },
+      function() {
+        $(this).removeClass('hovered');
+      }
+    );
+
+    // Add hover effect to book images
+    $('.arrivals_book_img').hover(
+      function() {
+        $(this).addClass('hovered');
+      },
+      function() {
+        $(this).removeClass('hovered');
+      }
+    );
+    
+  });
+</script>
+
+
+
+  </section>
+
+
+  <!--Blog-->
+  <section class="blog">
+    <div class="blogs" id="blogs">
+      <h1 class="heading"> our<span> Blog </span> </h1>
+
+      <div class="blog_box">
+
+        <div class="blog_card">
+
+          <div class="blog_img">
+            <img src="image/blog1.jpeg">
+          </div>
+
+          <div class="blog_tag">
+            <h2>blog title</h2>
+            <p class="blog-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis voluptate
+              veritatis minima dolorem provident molestias possimus iste rem totam laborum, incidunt sequi enim
+              perferendis beatae cum aliquam ullam laboriosam?</p>
+            <a href="#" class="ff_btn">read More</a>
+          </div>
+        </div>
+
+        <div class="blog_card">
+
+          <div class="blog_img">
+            <img src="image/blog2.jpg">
+          </div>
+
+          <div class="blog_tag">
+            <h2>blog title</h2>
+            <p class="blog-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil veritatis quisquam
+              praesentium sit quaerat neque, rem quod voluptate deserunt, sequi aperiam ducimus saepe numquam odit quam
+              laudantium totam voluptas fugit! </p>
+            <a href="#" class="ff_btn">read More</a>
+          </div>
+        </div>
+
+        <div class="blog_card">
+
+          <div class="blog_img">
+            <img src="image/blog3.jpg">
+          </div>
+
+          <div class="blog_tag">
+            <h2>blog title</h2>
+            <p class="blog-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quasi nam
+              dolores expedita facilis ex aliquam, vitae officiis esse. Id nam temporibus incidunt ex reiciendis rem
+              magni possimus dolorem cum!</p>
+            <a href="#" class="ff_btn">read More</a>
+          </div>
+        </div>
+        <script>
+          $(document).ready(function() {
+            // Add click event listener to read more buttons
+            $('.ff_btn').click(function() {
+              // Hide the <p> tag
+              
+              alert("Thank you for your interest! More blog content will be added soon.");
+            });
+          });
+          </script>
+
+
+
+  </section>
+  <!-----reviews---->
+ 
+  <div class= "ters" id="revw">
+<div class ="inner">
+<h1 class="heading">client's<span> reviews</span></h1>
+<div class="border"></div>
+<div class ="row" >
+<div class="col">
+<div class="ter">
+<img src="image/pic-re/re1.jpeg" alt="">
+<div class="name">john de</div>
+ <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.
+       </p>
+       <button class="review-btn">Write your review</button>
+						</div>
+						</div>
+						<div class="col">
+<div class="ter">
+<img src="image/pic-re/re2.png" alt="">
+<div class="name">john de</div>
+ <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+<p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.
+            </p>
+                <button class="review-btn">Write your review</button>
+						</div>
+						</div>
+						<div class="col">
+<div class="ter">
+<img src="image/pic-re/re3.png" alt="">
+<div class="name">john de</div>
+ <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+<p>
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.
+  </p>
+  <button class="review-btn">Write your review</button>
+						</div>
+						</div>
+
+            <style>
+              .review-btn {
+                display: inline-block;
+                background-color: #089da1;
+                color: #fff;
+                padding: 1rem 2rem;
+                margin-top: 1.5rem;
+                text-decoration: none;
+                font-size: 1.2rem;
+                transition: background-color 0.2s ease-in-out;
+              }
+              
+              .review-btn:hover {
+                background-color: #008c92;
+              }
+
+          </style>
+
+
+
+            <script>
+              $(document).ready(function() {
+                $('.ter').hover(
+                  function() {
+                    // Code to run when the mouse enters the review card (mouseenter event)
+                    $(this).find('p').hide();
+                  },
+                  function() {
+                    // Code to run when the mouse leaves the review card (mouseleave event)
+                    $(this).find('p').show();
+                  }
+                );
+              
+                $('.review-btn').click(function() {
+                  // Navigate to review.html
+                  window.location.href = 'review.html';
+                });
+              });
+              </script>
+      
+</div>
+</div>
+</div>
+
+<!----end of reviews-->
+
+  <footer>
+    <div class="footer_main">
+
+        <div class="tag">
+            <img src="image/logo1.jpg">
+            <p>
+                Welcome to our online bookstore! We offer a wide selection of books, including bestsellers,
+                classics, and new releases.
+                Our mission is to provide our customers with a convenient and enjoyable shopping experience,
+                with competitive prices and fast shipping. If you have any questions or feedback,
+                please don't hesitate to contact us.
+                Thank you for choosing Bookstore Inc.
+            </p>
+
+        </div>
+
+        <div class="tag">
+            <h1>Quick Link</h1>
+            <a href="#Home">Home</a>
+            <a href="#features">our Features</a>
+            <a href="#deal"> offers </a>
+            <a href="#Arrivals">Arrivals</a>
+            <a href="#blogs">blogs</a>
+            <a href="#revw">Reviews</a>
+            <a href="reqbok.html">Request a book</a>
+            
+
+
+           
+
+        </div>
+
+        <div class="tag">
+            <h1>Contact Info</h1>
+            <a href="#"><i class="fa-solid fa-phone"></i>+201096315454</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>+20015893257</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>storyshop@gmail.com</a>
+
+        </div>
+
+        <div class="tag">
+            <h1>Follow Us</h1>
+            <div class="social_link">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <div class="tag">
+            <h1>Newsletter</h1>
+            <div class="search_bar">
+                <input type="text" placeholder="You email id here">
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="end">&copy;<span>the story shop</span></p>
+
+</footer>
+
+  <script src="js/app.js"></script>
+
+<!--make a smooth scrolling-->
+  <script>
+        $(document).ready(function() {
+          // Smooth scrolling when clicking on navigation links
+          $('a[href^="#"]').on('click', function(event) {
+            event.preventDefault();
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+            }
+          });
+        });
+      </script>
+
+</body>
+
+
+
+
+
+</html>
